@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+#### This code is part of tutorial from freecodecamp youtube channel link https://youtu.be/3qBXWUpoPHo
+
+## Angular component LifeCycle
+
+- component instance has lifecycle hooks which can hwlp you hook into diffrent events on Components.
+
+- life cycle ends when compnent is destroyed.
+
+#### A few lifecycle hooks are
+
+1. ngOnChanges
+2. ngOnInit
+3. ngDoCheck
+4. ngAfterContentInit
+5. ngAfterContentChecked
+6. ngAterViewInit
+7. ngAfterViewChecked
+8. ngOnDestroy
+
+### Component Comunication
