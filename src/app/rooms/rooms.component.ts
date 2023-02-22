@@ -17,55 +17,60 @@ export class RoomsComponent implements OnInit {
     bookedRooms: 5,
   };
 
-  roomlist: RoomList[] = [
-    {
-      roomType: 'Delux rooms',
-      amenities: '',
-      checkinTime: new Date('11-nov-2021'),
-      checkoutTime: new Date('11-nov-2021'),
-      photos: '',
-      price: 500,
-    },
-    {
-      roomType: 'Delux rooms2',
-      amenities: '',
-      checkinTime: new Date('11-nov-2021'),
-      checkoutTime: new Date('11-nov-2021'),
-      photos: '',
-      price: 500,
-    },
-    {
-      roomType: 'Delux rooms3',
-      amenities: '',
-      checkinTime: new Date('11-nov-2021'),
-      checkoutTime: new Date('11-nov-2021'),
-      photos: '',
-      price: 500,
-    },
-    {
-      roomType: 'Delux rooms4',
-      amenities: 'Air conditon, Free Wi-fi, Tv, Bathroom, Kitchen',
-      checkinTime: new Date('11-nov-2021'),
-      checkoutTime: new Date('11-nov-2021'),
-      photos: '',
-      price: 500,
-    },
-    {
-      roomType: 'Delux rooms5',
-      amenities: '',
-      checkinTime: new Date('11-nov-2021'),
-      checkoutTime: new Date('11-nov-2021'),
-      photos: '',
-      price: 500,
-    },
-  ];
-
+  roomlist: RoomList[] = [];
   constructor() {}
+
+  // lifecycle component
+
+  ngOnInit(): void {
+    // this data is loaded when component is initialised
+    this.roomlist = [
+      {
+        roomType: 'Delux rooms',
+        amenities: '',
+        checkinTime: new Date('11-nov-2021'),
+        checkoutTime: new Date('11-nov-2021'),
+        photos: '',
+        price: 500,
+      },
+      {
+        roomType: 'Delux rooms2',
+        amenities: '',
+        checkinTime: new Date('11-nov-2021'),
+        checkoutTime: new Date('11-nov-2021'),
+        photos: '',
+        price: 500,
+      },
+      {
+        roomType: 'Delux rooms3',
+        amenities: '',
+        checkinTime: new Date('11-nov-2021'),
+        checkoutTime: new Date('11-nov-2021'),
+        photos: '',
+        price: 500,
+      },
+      {
+        roomType: 'Delux rooms4',
+        amenities: 'Air conditon, Free Wi-fi, Tv, Bathroom, Kitchen',
+        checkinTime: new Date('11-nov-2021'),
+        checkoutTime: new Date('11-nov-2021'),
+        photos: '',
+        price: 500,
+      },
+      {
+        roomType: 'Delux rooms5',
+        amenities: '',
+        checkinTime: new Date('11-nov-2021'),
+        checkoutTime: new Date('11-nov-2021'),
+        photos: '',
+        price: 500,
+      },
+    ];
+  }
+
   // class method
   toggle() {
     this.hide = !this.hide;
   }
-  // why we need this figure out.
-  ngOnInit(): void {}
 }
 // start from directive 3hr:25min:52sec
