@@ -4,5 +4,18 @@
   <!--this is a property binding  -->
   <div [innerText]="numberofrooms"></div>
 </div>
+<!-- {{ rooms ?? "No rooms" }} -->
+<div *ngIf="rooms?.availableRooms">Rooms List</div>
 
 <button (click)="toggle()">toggle</button>
+
+<table class="table">
+  <tr>
+    <th>Total Number</th>
+    <th>Room Type</th>
+    <th>Room Price</th>
+    <th>Room Amenities</th>
+    <th>CheckIn Time</th>
+  </tr>
+  
+</table>
